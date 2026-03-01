@@ -2,7 +2,7 @@
 title: "Protein Language Models, Single-Cell Variant Analysis, and Cancer Neoantigens"
 pubDate: 2026-02-14
 description: "This week showcases groundbreaking bioinformatics advances: from protein language model benchmarks and single-cell functional variant analysis to immunopeptidomic pipelines for cancer neoantigens, virus variant quantification, and biomarker analysis tools."
-summary: "Five major bioinformatics breakthroughs covering protein language model benchmarks for kinase annotation, single-cell functional variant analysis for rare disease studies, cancer neoantigen discovery pipelines, virus variant quantification in mixed infections, and an accessible web-based biomarker analysis platform."
+summary: "Can protein language models predict kinase-substrate relationships without training data? How do we find regulatory variants affecting specific cell types? What if we could predict which neoantigens a patient's immune system will recognize? This week's breakthroughs explore these frontiers."
 weekNumber: 6
 draft: false
 ---
