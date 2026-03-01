@@ -11,7 +11,7 @@ draft: false
 
 A new public atlas release improves harmonization across tissues and batches, making downstream comparative cell-state analysis more reliable. This resource enables researchers to integrate single-cell data from multiple studies and laboratories, reducing technical variation while preserving biological signals. The harmonized atlas supports discovery of cell types and states across the human body.
 
-- [Single-cell atlas paper](https://pubmed.ncbi.nlm.nih.gov/41654922/)
+- [Single-cell atlas paper](https://pubmed.ncbi.nlm.nih.gov/41676679/)
 
 ## PScnv: Personalized CNV Detection
 
