@@ -61,8 +61,8 @@ Methods for correcting sampling and population-size biases improve the accuracy 
 
 - [Population genomics methods](https://pubmed.ncbi.nlm.nih.gov/41618441/)
 
-## Single-Cell Spatial Transcriptomics
+## Spatial Transcriptomics Advances
 
-Advances in single-cell spatial transcriptomics enable detailed mapping of gene expression within tissue architecture. This technology reveals cell-cell interactions that were previously invisible.
+New methods for spatial transcriptomics enable detailed mapping of gene expression within tissue architecture. These advances reveal cell-cell interactions that were previously invisible, transforming our understanding of tissue organization.
 
-- [Spatial transcriptomics review](https://pubmed.ncbi.nlm.nih.gov/41612174/)
+- [Spatial transcriptomics methods](https://pubmed.ncbi.nlm.nih.gov/41612174/)
