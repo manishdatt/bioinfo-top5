@@ -2,7 +2,7 @@
 title: "Spatial Multi-Omics, Single-Cell Perturbations, and Variant Classification"
 pubDate: 2026-02-07
 description: "This week highlights cutting-edge bioinformatics tools: spatial multi-omics integration, single-cell perturbation prediction, variant classification, multi-omics module analysis, and trajectory-based protein prediction."
-summary: "Five significant bioinformatics developments featuring spatial multi-omics through histology-anchored integration, benchmarking algorithms for single-cell perturbation response prediction, comprehensive evaluation of variant classification tools, integrative module analysis for multi-omics data, and trajectory-based pKa prediction for protein engineering."
+summary: "Can we profile multiple molecular layers in a single tissue section? How accurately can we predict cellular responses to genetic perturbations? Which variant classification tool should you trust for clinical diagnosis? This week explores answers through spatial multi-omics, perturbation prediction benchmarks, and more."
 weekNumber: 5
 draft: false
 ---
