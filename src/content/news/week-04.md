@@ -1,17 +1,23 @@
 ---
-title: "Genome Editing, Spatial Analysis, and Multi-Omics Integration"
+title: "AI-Powered Bioinformatics: Single-Cell, Variants, Tools, and Protein Discovery"
 pubDate: 2026-01-31
-description: "A weekly scan of bioinformatics papers covering genome editing, spatial analysis, variant detection, multi-omics, tools, protein analysis, and machine learning applications."
-summary: "Can duplex base editing cure beta-thalassemia? How do CRISPR epigenome editors affect off-target sites? What can vole genomes reveal about evolution? This week's bioinformatics breakthroughs explore genome engineering, spatial profiling, and multi-omics integration."
+description: "A weekly scan of bioinformatics papers featuring AI/ML advances in single-cell analysis, variant detection, bioinformatics tools, and protein discovery."
+summary: "Can AI models predict drug sensitivity from single-cell images? How do foundation models transform single-cell genomics? Which new tools enable semantic search across gene expression databases? This week's AI-driven bioinformatics breakthroughs cover single-cell AI, variant analysis, tools, and protein engineering."
 weekNumber: 4
 draft: false
 ---
 
-## Duplex Base Editing for Beta-Thalassemia
+## CytoVerse: Single-Cell AI Foundation Models
 
-Functional correction and genome integrity were achieved with duplex base editing of beta-thalassemic hematopoietic stem cells. This approach demonstrates therapeutic potential for treating blood disorders by directly correcting disease-causing mutations in patient-derived stem cells. The study shows high editing efficiency with minimal off-target effects.
+CytoVerse provides single-cell AI foundation models accessible directly in web browsers, enabling scalable and privacy-preserving analysis of single-cell datasets. This breakthrough democratizes access to cutting-edge AI for single-cell research, allowing researchers without computational resources to leverage foundation models.
 
-- [Duplex base editing paper](https://pubmed.ncbi.nlm.nih.gov/41629994/)
+- [CytoVerse paper](https://pubmed.ncbi.nlm.nih.gov/41659670/)
+
+## AI Single-Cell Imaging for Drug Screening
+
+Regularized single-cell imaging enables generalizable AI models for stain-free cell viability screening. This approach eliminates the need for toxic stains while maintaining prediction accuracy, accelerating drug discovery workflows.
+
+- [Single-cell AI imaging](https://pubmed.ncbi.nlm.nih.gov/41574984/)
 
 ## CRISPR/dCas9 Epigenome Editing Profile
 
@@ -19,21 +25,33 @@ Comprehensive profiling of CRISPR/dCas9 epigenome editors reveals complex relati
 
 - [CRISPR epigenome profiling](https://pubmed.ncbi.nlm.nih.gov/41620608/)
 
-## SPAC: Spatial Analysis Platform
+## Duplex Base Editing for Beta-Thalassemia
 
-A scalable and integrated enterprise platform called SPAC enables single-cell spatial analysis across multiple modalities. This tool streamlines the processing of spatial omics data, making it accessible for both novice and expert users in biomedical research.
+Functional correction and genome integrity were achieved with duplex base editing of beta-thalassemic hematopoietic stem cells. This approach demonstrates therapeutic potential for treating blood disorders by directly correcting disease-causing mutations in patient-derived stem cells.
 
-- [SPAC platform](https://pubmed.ncbi.nlm.nih.gov/41612174/)
+- [Duplex base editing paper](https://pubmed.ncbi.nlm.nih.gov/41629994/)
 
 ## Semantic Search for Gene Expression Datasets
 
-Using semantic search to find publicly available gene expression datasets enables researchers to discover relevant data more efficiently. This natural language approach connects researchers with compatible datasets across repositories, accelerating discovery.
+Using semantic search powered by natural language processing to find publicly available gene expression datasets enables researchers to discover relevant data more efficiently. This AI-driven approach connects researchers with compatible datasets across repositories.
 
 - [Semantic search tool](https://pubmed.ncbi.nlm.nih.gov/41627879/)
 
+## SPAC: Spatial Analysis Platform
+
+A scalable and integrated enterprise platform called SPAC enables single-cell spatial analysis across multiple modalities. This tool streamlines the processing of spatial omics data for both novice and expert users.
+
+- [SPAC platform](https://pubmed.ncbi.nlm.nih.gov/41612174/)
+
+## muPharma: AI-Driven Drug Sensitivity Prediction
+
+An AI-driven pharmacotyping platform enables single-cell drug sensitivity prediction in leukemia without direct drug exposure. By quantifying pretreatment biomarkers, muPharma integrates microfluidic technology with machine learning to personalize treatment.
+
+- [muPharma platform](https://pubmed.ncbi.nlm.nih.gov/41619724/)
+
 ## Transplatformer: Toxicogenomic Translation
 
-Transplatformer translates toxicogenomic profiles between generations of platforms, enabling comparison of data generated across different technology versions. This tool addresses a critical challenge in longitudinal toxicology studies.
+Transplatformer translates toxicogenomic profiles between generations of platforms, enabling comparison of data generated across different technology versions. This tool addresses critical challenges in longitudinal toxicology studies.
 
 - [Transplatformer](https://pubmed.ncbi.nlm.nih.gov/41618140/)
 
@@ -43,26 +61,8 @@ An integrated multi-omics and network analysis reveals the trajectory of neutrop
 
 - [Neutrophil differentiation study](https://pubmed.ncbi.nlm.nih.gov/41618446/)
 
-## Evolutionary History of Vole Species
+## AI-Powered Aptamer Discovery
 
-The evolutionary history of the field vole species complex was revealed through modern and ancient genomes. This study demonstrates how paleogenomics can reconstruct species radiations and adaptation.
-
-- [Vole genome evolution](https://pubmed.ncbi.nlm.nih.gov/41629962/)
-
-## Walnut Domestication Genomics
-
-Resolving sampling and population-size biases in domestication genomics supports a South Asian origin of walnuts. This work provides a model for understanding crop domestication processes.
-
-- [Walnut domestication](https://pubmed.ncbi.nlm.nih.gov/41618441/)
-
-## Population Genomics of Sampling Biases
-
-Methods for correcting sampling and population-size biases improve the accuracy of domestication genomics studies. These statistical approaches are broadly applicable to evolutionary analyses.
-
-- [Population genomics methods](https://pubmed.ncbi.nlm.nih.gov/41618441/)
-
-## SPARKing Aptamer Discovery
-
-New methods for aptamer discovery are enabling identification of high-affinity nucleic acid binders for diagnostics and therapeutics. These approaches accelerate the development of biosensors and targeted therapies.
+New AI methods for aptamer discovery enable identification of high-affinity nucleic acid binders for diagnostics and therapeutics. These machine learning approaches accelerate the development of biosensors and targeted therapies.
 
 - [Aptamer discovery methods](https://pubmed.ncbi.nlm.nih.gov/41673433/)
