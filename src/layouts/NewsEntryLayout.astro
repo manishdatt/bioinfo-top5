@@ -42,7 +42,7 @@ const dateRange = getIsoWeekRangeLabel(weekNumber, pubDate.getUTCFullYear());
       </p>
     )
   }
-  <div class={contentClass}>
+  <div class:list={["news-content", contentClass]}>
     <slot />
   </div>
 </article>

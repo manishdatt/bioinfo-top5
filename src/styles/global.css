@@ -23,3 +23,14 @@ body {
 .font-geo {
   font-family: "Geo", var(--font-sans);
 }
+
+.news-content a {
+  color: #9c51e0;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.news-content a:hover {
+  opacity: 0.9;
+}
