@@ -2,7 +2,7 @@
 title: "Single-Cell Innovations, Long-Read Breakthroughs, and Spatial Multi-Omics"
 pubDate: 2026-02-21
 description: "This week explores cutting-edge bioinformatics advances: from scalable somatic variant calling in long-read sequencing to graph contrastive learning for single-cell proteomics, spatial multi-omics integration, protein mutational constraint, and locus-specific transposable element analysis."
-summary: "Five pivotal bioinformatics developments covering scalable somatic variant calling in long-read sequencing, graph contrastive learning for single-cell proteomics, spatial pattern classification for tissue analysis, protein mutational constraint prediction, and benchmarking transposable element analysis in scRNA-seq."
+summary: "Can we detect cancer mutations with affordable long-read sequencing? What if graph neural networks could reveal hidden cell types in proteomics data? How do we map spatial patterns without prior cell-type knowledge? This week's innovations push the boundaries of genomic research."
 weekNumber: 7
 draft: false
 ---
