@@ -1,8 +1,8 @@
 ---
-title: "Single-Cell Atlases, Protein Models, and Variant Calling Advances"
+title: "Single-Cell Atlases, CNV Detection, and Metagenomics Advances"
 pubDate: 2026-02-28
-description: "A concise weekly scan of notable bioinformatics papers, tools, and datasets spanning single-cell atlases, protein modeling, variant calling, metagenomics, and cancer isoform resources."
-summary: "Five bioinformatics updates covering cross-tissue single-cell atlas harmonization, protein language model fine-tuning benchmarks, long-read variant calling at low coverage, clinical metagenomics pipeline improvements, and cancer transcript isoform resources for biomarker discovery."
+description: "A weekly scan of notable bioinformatics papers and tools covering single-cell atlases, CNV detection, long-read assembly, metagenomics, and cancer isoform resources."
+summary: "Five bioinformatics updates covering cross-tissue single-cell atlas harmonization, personalized CNV detection with hierarchical framework, overlapping nanopore signals for assembly, clinical metagenomics pipeline improvements, and cancer transcript isoform resources for biomarker discovery."
 weekNumber: 8
 draft: false
 ---
@@ -13,17 +13,17 @@ A new public atlas release improves harmonization across tissues and batches, ma
 
 - [Single-cell atlas paper](https://pubmed.ncbi.nlm.nih.gov/41654922/)
 
-## Protein Language Model Fine-Tuning Benchmark
+## PScnv: Personalized CNV Detection
 
-An updated benchmark compares efficient fine-tuning strategies on open protein language models, with practical guidance for small-lab compute budgets. The study evaluates adapter methods, LoRA, and full fine-tuning across various downstream tasks, finding that parameter-efficient approaches can achieve competitive performance with dramatically reduced computational requirements.
+A new framework called PScnv provides personalized self-normalizing copy number variation detection with a hierarchical multi-phase approach. This method improves detection accuracy by learning patient-specific background signals, enabling more sensitive identification of somatic CNVs in cancer genomes.
 
-- [Protein model benchmark](https://pubmed.ncbi.nlm.nih.gov/41160492/)
+- [PScnv paper](https://pubmed.ncbi.nlm.nih.gov/41746294/)
 
-## Long-Read Variant Calling at Low Coverage
+## Rawsamble: Overlapping Nanopore Signals
 
-A new caller improves SNV and indel detection from low-coverage long-read sequencing, reducing false positives in difficult genomic regions. This advancement makes affordable long-read sequencing more practical for population-scale studies and clinical applications where high coverage isn't feasible.
+A novel tool enables overlapping raw nanopore signals using a hash-based seeding mechanism, improving long-read assembly accuracy. This advancement helps resolve complex genomic regions and enables better haplotype phasing for structural variant detection.
 
-- [Long-read variant calling](https://pubmed.ncbi.nlm.nih.gov/41639627/)
+- [Rawsamble paper](https://pubmed.ncbi.nlm.nih.gov/41746292/)
 
 ## Clinical Metagenomics Pipeline Improvements
 
