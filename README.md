@@ -1,43 +1,39 @@
-# Astro Starter Kit: Minimal
+# Bioinfo Top 5
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Bioinfo Top 5 is a minimalist weekly bioinformatics news site built with Astro and Tailwind CSS.  
+The homepage highlights the latest weekly edition, and older editions are available in the archive.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Overview
 
-## 🚀 Project Structure
+- Framework: Astro 5 (static output)
+- Styling: Tailwind CSS + `@tailwindcss/typography`
+- Content source: local Markdown files via Astro Content Collections
+- Deployment target: Cloudflare Pages
 
-Inside of your Astro project, you'll see the following folders and files:
+## Content Model
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Weekly issues are stored in `src/content/news/*.md`.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Each markdown file uses this frontmatter shape:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- `title` (string)
+- `pubDate` (date)
+- `description` (string, SEO)
+- `summary` (string)
+- `weekNumber` (number)
+- `draft` (boolean, optional, defaults to `false`)
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Site Structure
 
-## 🧞 Commands
+- `/`  
+  Shows the most recent weekly issue with summary and highlight cards.
+- `/archive/`  
+  Lists previous weeks as cards.
+- `/news/[slug]/`  
+  Dedicated page for each weekly issue.
 
-All commands are run from the root of the project, from a terminal:
+## Design Notes
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Light/dark mode with a persisted toggle (localStorage).
+- Typography-focused reading layout with restrained motion and high contrast.
+- Brand assets served from `public/` including `logo_path.svg` for favicon and header logo.
