@@ -2,7 +2,7 @@
 title: "Protein Language Models, Single-Cell Variant Analysis, and Cancer Neoantigens"
 pubDate: 2026-02-14
 description: "This week showcases groundbreaking bioinformatics advances: from protein language model benchmarks and single-cell functional variant analysis to immunopeptidomic pipelines for cancer neoantigens, virus variant quantification, and biomarker analysis tools."
-summary: "Five major bioinformatics breakthroughs from top journals including Nature Methods, Genome Biology, and Bioinformatics (Oxford). This week's developments cover protein structure prediction, rare variant association testing, cancer immunotherapy, virus variant analysis, and accessible biomarker discovery tools."
+summary: "Five major bioinformatics breakthroughs from Nature Methods, Genome Biology, and BMC Bioinformatics. Topics covered: protein language model fine-tuning (Nature Methods), single-cell functional variant analysis for rare variant association, cancer neoantigen discovery pipeline (Genome Biology), virus variant quantification in mixed infections, and an accessible web-based biomarker analysis platform."
 weekNumber: 6
 draft: false
 ---
