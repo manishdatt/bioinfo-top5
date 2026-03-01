@@ -1,4 +1,6 @@
 ---
+import { getIsoWeekRangeLabel } from "../utils/date";
+
 interface Props {
   title: string;
   weekNumber: number;
@@ -14,11 +16,13 @@ const {
   summary,
   contentClass = "prose prose-slate mt-8 max-w-none lg:prose-xl dark:prose-invert",
 } = Astro.props;
+
+const dateRange = getIsoWeekRangeLabel(weekNumber, pubDate.getUTCFullYear());
 ---
 
 <article>
   <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
-    Week {weekNumber}
+    {dateRange}
   </p>
   <h1 class="mt-2 font-serif text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
     {title}
