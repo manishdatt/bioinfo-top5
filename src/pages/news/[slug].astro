@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import NewsEntryLayout from "../../layouts/NewsEntryLayout.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("news", ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props as { post: CollectionEntry<"news"> };
+const { Content } = await post.render();
+---
+
+<BaseLayout title={post.data.title} description={post.data.description}>
+  <NewsEntryLayout
+    title={post.data.title}
+    weekNumber={post.data.weekNumber}
+    pubDate={post.data.pubDate}
+    summary={post.data.summary}
+  >
+    <Content />
+  </NewsEntryLayout>
+</BaseLayout>

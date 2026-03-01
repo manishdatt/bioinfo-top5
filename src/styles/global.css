@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Geo&display=swap");
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Merriweather", "Times New Roman", serif;
+  --font-sans: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.font-geo {
+  font-family: "Geo", var(--font-sans);
+}

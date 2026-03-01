@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bioinfo.guru/sitemap-index.xml
