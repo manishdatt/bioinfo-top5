@@ -61,8 +61,8 @@ Methods for correcting sampling and population-size biases improve the accuracy 
 
 - [Population genomics methods](https://pubmed.ncbi.nlm.nih.gov/41618441/)
 
-## Spatial Transcriptomics Advances
+## SPARKing Aptamer Discovery
 
-New methods for spatial transcriptomics enable detailed mapping of gene expression within tissue architecture. These advances reveal cell-cell interactions that were previously invisible, transforming our understanding of tissue organization.
+New methods for aptamer discovery are enabling identification of high-affinity nucleic acid binders for diagnostics and therapeutics. These approaches accelerate the development of biosensors and targeted therapies.
 
-- [Spatial transcriptomics methods](https://pubmed.ncbi.nlm.nih.gov/41612174/)
+- [Aptamer discovery methods](https://pubmed.ncbi.nlm.nih.gov/41673433/)
