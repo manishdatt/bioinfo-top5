@@ -1,6 +1,6 @@
 ---
 title: "AI-Powered Bioinformatics: Deep Learning, Multi-Omics, and Drug Discovery"
-pubDate: 2026-02-28
+pubDate: 2026-03-01
 description: "A weekly scan of bioinformatics papers featuring AI/ML advances in single-cell analysis, variant detection, data integration, microbiome analysis, and protein research."
 summary: "Can deep learning discover hidden cell types in single-cell data? How do LLM agents transform omics analysis? Which new tools integrate biomedical data seamlessly? This week's AI-driven bioinformatics breakthroughs cover deep learning, multi-omics, and computational biology."
 weekNumber: 9
