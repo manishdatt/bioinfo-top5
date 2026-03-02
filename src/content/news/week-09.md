@@ -9,9 +9,9 @@ draft: false
 
 ## LLM Agents for Single-Cell Omics
 
-New benchmarks evaluate AI agents for single-cell omics analysis, assessing their ability to automate complex bioinformatics workflows. These LLM-powered agents can now assist researchers single-cell experiments.
+New benchmarks evaluate AI agents for single-cell omics analysis, assessing their ability to automate complex bioinformatics workflows. These LLM-powered agents can now assist researchers in designing and executing single-cell experiments.
 
- in designing and executing agents benchmark](https- [LLM://pubmed.ncbi.nlm.nih.gov/41742311/)
+- [LLM agents benchmark](https://pubmed.ncbi.nlm.nih.gov/41742311/)
 
 ## PScnv: Personalized CNV Detection
 
