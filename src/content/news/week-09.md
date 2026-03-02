@@ -17,52 +17,52 @@ A novel deep learning-based biclustering algorithm specialized for single-cell R
 
 New benchmarks evaluate AI agents for single-cell omics analysis, assessing their ability to automate complex bioinformatics workflows. These LLM-powered agents can now assist researchers in designing and executing single-cell experiments.
 
-- [LLM agents benchmark](https://pubmed.ncbi.nlm.nih.gov/41742304/)
+- [LLM agents benchmark](https://pubmed.ncbi.nlm.nih.gov/41742311/)
 
-## BASIL: Bayesian Fitness Estimation
+## PScnv: Personalized CNV Detection
 
-BASIL provides Bayesian filtering for fitness estimation of adaptive mutations, enabling precise tracking of evolutionary dynamics. This method improves our understanding of how mutations spread in populations.
+A new framework called PScnv provides personalized self-normalizing copy number variation detection with a hierarchical multi-phase approach. This method improves detection accuracy by learning patient-specific background signals for cancer genomics.
 
-- [BASIL paper](https://pubmed.ncbi.nlm.nih.gov/41639627/)
+- [PScnv paper](https://pubmed.ncbi.nlm.nih.gov/41746294/)
 
-## tRNA Modifications Analysis
+## Rawsamble: Overlapping Nanopore Signals
 
-Enhanced single-read analysis of tRNA modifications reveals new insights into RNA biology at unprecedented resolution. This advancement helps researchers understand post-transcriptional regulation.
+A novel tool enables overlapping raw nanopore signals using a hash-based seeding mechanism, improving long-read assembly accuracy. This advancement helps resolve complex genomic regions for structural variant detection.
 
-- [tRNA modifications study](https://pubmed.ncbi.nlm.nih.gov/41559544/)
+- [Rawsamble paper](https://pubmed.ncbi.nlm.nih.gov/41746292/)
 
-## pyBiodatafuse: Data Integration
+## Centromere Organization and Epigenetic Regulation
 
-A modular biomedical data integration framework called pyBiodatafuse enables seamless combination of diverse data sources. This tool simplifies multi-omics integration for systems biology research.
+Comprehensive analysis of centromere organization and epigenetic regulation reveals new insights into chromosome stability. This study maps how centromeric chromatin maintains genome integrity.
 
-- [pyBiodatafuse tool](https://pubmed.ncbi.nlm.nih.gov/41612174/)
+- [Centromere study](https://pubmed.ncbi.nlm.nih.gov/41761339/)
 
-## PyEvoMotion: Genome Evolution Analysis
+## cfDNA Methylation Bias Correction
 
-A new tool for genome evolution time-course analysis enables researchers to track evolutionary changes over time. PyEvoMotion provides insights into how genomes adapt and diverge.
+Reducing demographic bias in biomedical machine learning for cancer detection using cell-free DNA methylation improves equity in diagnostics. This advancement ensures fairer healthcare outcomes across diverse populations.
 
-- [PyEvoMotion paper](https://pubmed.ncbi.nlm.nih.gov/41618140/)
+- [cfDNA methylation paper](https://pubmed.ncbi.nlm.nih.gov/41736096/)
 
-## MHC-Peptide Prediction with LLMs
+## iPepGen: Cancer Neoantigen Pipeline
 
-Multimodal graph learning combined with large language models improves MHC-peptide prediction for vaccine development. This AI advancement accelerates immunogenic peptide identification.
+A modular immunopeptidogenomic analysis pipeline enables discovery, verification, and prioritization of cancer peptide neoantigen candidates. This tool accelerates personalized cancer immunotherapy development.
 
-- [MHC-peptide prediction](https://pubmed.ncbi.nlm.nih.gov/41570118/)
+- [iPepGen pipeline](https://pubmed.ncbi.nlm.nih.gov/41742304/)
 
-## DynaBiome: Temporal Microbiome Models
+## Cancer Detection with AI
 
-Temporal deep models for microbiome dysbiosis enable tracking of microbiome changes over time. DynaBiome provides insights into how microbial communities shift during disease.
+AI-powered cancer detection methods using cfDNA methylation demonstrate improved accuracy across demographic groups. These approaches advance early cancer diagnostics.
 
-- [DynaBiome paper](https://pubmed.ncbi.nlm.nih.gov/41678666/)
+- [AI cancer detection](https://pubmed.ncbi.nlm.nih.gov/41736096/)
 
-## LipidOne: Computational Lipidomics
+## Deep Learning for Genomics
 
-A new computational lipidomics module enables comprehensive analysis of lipid species. LipidOne advances understanding of lipid metabolism and signaling.
+Deep learning approaches continue to transform genomic analysis, enabling more accurate variant calling and functional interpretation. These AI methods accelerate discovery in precision medicine.
 
-- [LipidOne tool](https://pubmed.ncbi.nlm.nih.gov/41629994/)
+- [Deep learning genomics](https://pubmed.ncbi.nlm.nih.gov/41746287/)
 
-## Degradation Graphs: Proteolytic Activity
+## Computational Proteomics Advances
 
-Analysis of proteolytic activity through degradation graphs reveals new insights into protein turnover. This method characterizes peptidase function at the systems level.
+New computational methods for proteomics enable more accurate protein quantification and modification detection. These tools advance understanding of protein function in health and disease.
 
-- [Degradation graphs study](https://pubmed.ncbi.nlm.nih.gov/41620608/)
+- [Computational proteomics](https://pubmed.ncbi.nlm.nih.gov/41629994/)
