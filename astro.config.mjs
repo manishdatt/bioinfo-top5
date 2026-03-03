@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://bioinfo.guru',
+  site: 'https://top5.bioinfo.guru',
   output: 'static',
   integrations: [sitemap()],
   vite: {
