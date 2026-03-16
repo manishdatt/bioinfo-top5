@@ -1,6 +1,6 @@
 ---
 title: "Bioinformatics Advances: EHR, Centromeres, and Spatial Proteomics"
-pubDate: 2026-03-09
+pubDate: 2026-03-16
 description: "Weekly bioinformatics news covering EHR data harmonization, machine learning for metabolite classification, rice centromere biology, spatial proteomics, and pancreatic cancer biomarkers."
 summary: "Can we harmonize EHR data across healthcare systems? How do centromeres function during plant meiosis? What new methods advance spatial proteomics? This week's bioinformatics developments cover data harmonization, structural biology, and spatial analysis."
 weekNumber: 11
