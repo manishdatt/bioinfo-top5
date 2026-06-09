@@ -19,7 +19,7 @@ const { Content } = await latestPost.render();
 marked.use({ gfm: true, breaks: false });
 
 const parsedItems = Array.from(
-  latestPost.body.matchAll(/##\s+(.+?)\r?\n\r?\n([\s\S]*?)(?=(\r?\n##\s+)|$)/g),
+  latestPost.body.matchAll(/##\s+(.+?)\s*?\n([\s\S]*?)(?=(\n##\s+)|$)/g),
 ).map((match, index) => ({
   index: index + 1,
   title: match[1].trim(),
