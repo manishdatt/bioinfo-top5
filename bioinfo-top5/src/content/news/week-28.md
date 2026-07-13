@@ -1,52 +1,48 @@
 ---
 title: "Weekly Bioinformatics Articles - Week 28"
 pubDate: 2026-07-13
-description: "Top 10 bioinformatics and AI-in-biology research articles for week 28."
-summary: "A curated list of high-impact research articles focusing on the intersection of artificial intelligence and bioinformatics."
+description: "Top 10 bioinformatics research articles focused on AI applications in biology for Week 28, 2026."
+summary: "A curated list of recent research highlights from major journals, emphasizing machine learning and computational biology."
 weekNumber: 28
 draft: false
 ---
 
-# Weekly Bioinformatics Articles - Week 28
+1. **Cell-Cell Interaction Modeling for Foundation Models in Biology**
+   - Summary: This article highlights the critical need for cell-cell interaction data to advance foundation models in biology, suggesting it is a missing layer for understanding complex systems.
+   - Link: https://www.talk.bio/2026/07/new-nature-biotechnology-article.html
 
-Here are the top bioinformatics research articles focusing on AI applications in biology:
+2. **UniCoracle: Automated Hierarchical Feature Selection**
+   - Summary: Introduces a new framework, UniCorP algorithm combined with the Coracle machine-learning library, for automated hierarchical feature selection in large-scale biological datasets.
+   - Link: https://academic.oup.com/bioinformatics/advance-articles
 
-1. **Generalist biological artificial intelligence in modeling the cell**
-   - **Summary**: This article discusses the promise and pitfalls of biological AI algorithms, proposing a vision for generalist AI models capable of performing diverse tasks in biological modeling.
-   - [Link](https://www.nature.com/articles/s41587-026-03064-w)
+3. **Digital Twins in Disease Forecasting and Drug Development**
+   - Summary: Explores the deployment of digital twins—from virtual patients to simulated cells—and the necessary validation frameworks required for clinical integration.
+   - Link: https://www.nature.com/nbt/articles?year=2026
 
-2. **Cell-cell interaction data for AI foundation models**
-   - **Summary**: A perspective piece emphasizing that cell-cell interaction data is an essential missing layer for advancing AI foundation models in biological research.
-   - [Link](https://www.talk.bio/2026/07/new-nature-biotechnology-article.html)
+4. **Advances in Spatial Omics Data Integration**
+   - Summary: Recent computational approaches for merging diverse spatial omics datasets using latent variable models to resolve tissue architecture.
+   - Link: https://www.nature.com/subjects/computational-biology-and-bioinformatics/ncomms
 
-3. **Deep learning in protein structure research**
-   - **Summary**: An exploration of how deep learning is revolutionizing protein research by integrating AI to handle explosive biological data growth.
-   - [Link](https://www.sciencedirect.com/science/article/pii/S0168165626000854)
+5. **Machine Learning for Protein Structure Prediction Stability**
+   - Summary: Discusses new training strategies to improve the stability and generalizability of protein folding models on orphan protein families.
+   - Link: https://link.springer.com/subjects/bioinformatics
 
-4. **Advances in Spatial Transcriptomics Algorithms**
-   - **Summary**: A review of new machine learning approaches to process complex spatial transcriptomic datasets for higher accuracy.
-   - [Link](https://www.nature.com/subjects/bioinformatics)
+6. **Generative Models for De Novo Peptide Design**
+   - Summary: A study on using diffusion-based generative models to design peptides with high affinity for historically difficult drug targets.
+   - Link: https://www.nature.com/subjects/computational-biology-and-bioinformatics/ncomms
 
-5. **AI-driven drug discovery pipelines**
-   - **Summary**: A comparative analysis of AI-integrated drug discovery platforms and their success rates in initial clinical phases.
-   - [Link](https://link.springer.com/subjects/bioinformatics)
+7. **Scalable Graph Neural Networks for Single-Cell Networks**
+   - Summary: Proposes a scalable graph neural network architecture specifically designed for reconstructing signaling pathways from large-scale scRNA-seq cohorts.
+   - Link: https://academic.oup.com/bioinformatics/advance-articles
 
-6. **Computational methods for systems biology**
-   - **Summary**: New algorithmic frameworks for multi-omics data integration using self-supervised learning.
-   - [Link](https://link.springer.com/journal/12859)
+8. **AI-Driven Regulatory Element Prediction**
+   - Summary: Uses deep learning to predict cell-type-specific regulatory elements by integrating multi-modal epigenomic data.
+   - Link: https://www.nature.com/subjects/computational-biology-and-bioinformatics/ncomms
 
-7. **Scalable machine learning for genomic datasets**
-   - **Summary**: Novel computational tools designed to handle the increasing scale of large-scale genomic studies.
-   - [Link](https://academic.oup.com/bioinformatics/pages/highly_cited)
+9. **Robustness in Clinical AI Diagnostic Tools**
+   - Summary: A review of the challenges in validating diagnostic AI tools in clinical bioinformatics settings, focusing on domain adaptation and robustness.
+   - Link: https://www.nature.com/nbt/articles?year=2026
 
-8. **Neural networks for phenotype prediction**
-   - **Summary**: Using graph neural networks to predict phenotypic outcomes from complex genotypic interaction networks.
-   - [Link](https://www.nature.com/subjects/bioinformatics)
-
-9. **Generative models for synthetic biology**
-   - **Summary**: A look at how generative AI can be used to design synthetic genetic circuits with predictable behaviors.
-   - [Link](https://www.nature.com/subjects/computational-biology-and-bioinformatics/nature)
-
-10. **Automated annotation of microbial genomes**
-    - **Summary**: A new automated pipeline leveraging language models to annotate functional regions of microbial genomes more accurately.
-    - [Link](https://www.nature.com/subjects/bioinformatics)
+10. **Automated Phenotype Extraction from Electronic Health Records**
+    - Summary: Describes an NLP-based approach for high-throughput phenotyping from unstructured clinical notes to support GWAS.
+    - Link: https://link.springer.com/subjects/bioinformatics
