@@ -30,6 +30,7 @@ Desktop.ini
 # local temp files
 *.tmp
 *.temp
+test-regex.mjs
 
 # personal agent / workspace files (local-only, not part of the site)
 AGENTS.md
