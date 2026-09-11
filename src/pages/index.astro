@@ -18,13 +18,41 @@ const { Content } = await latestPost.render();
 
 marked.use({ gfm: true, breaks: false });
 
-const parsedItems = Array.from(
-  latestPost.body.matchAll(/##\s+(.+?)\s*?\n([\s\S]*?)(?=(\n##\s+)|$)/g),
-).map((match, index) => ({
-  index: index + 1,
-  title: match[1].trim(),
-  descriptionHtml: marked.parse(match[2].trim()).replace(/^<p>|<\/p>\n?$/g, ""),
-}));
+// Parse the latest post's body into a list of {title, descriptionHtml} items.
+// Supports "## Heading" format and "1. **Title**" numbered-list format.
+const raw = latestPost.body ?? "";
+
+type Item = { index: number; title: string; descriptionHtml: string };
+
+function stripOuterP(html: string): string {
+  return html.trim().replace(/^<p>|<\/p>\n?$/g, "");
+}
+
+let parsedItems: Item[] = [];
+
+// 1) Try "## Heading" sections
+const headingMatches = Array.from(
+  raw.matchAll(/##\s+(.+?)\s*?\n([\s\S]*?)(?=(\n##\s+)|$)/g),
+);
+if (headingMatches.length > 0) {
+  parsedItems = headingMatches.map((match, index) => ({
+    index: index + 1,
+    title: match[1].trim(),
+    descriptionHtml: stripOuterP(marked.parse(match[2].trim())),
+  }));
+} else {
+  // 2) Try "N. **Title**" numbered-list items
+  const listMatches = Array.from(
+    raw.matchAll(/^\s*(\d+)\.\s*\*\*(.+?)\*\*\s*([\s\S]*?)(?=^\s*\d+\.\s*\*\*|\s*$)/gm),
+  );
+  if (listMatches.length > 0) {
+    parsedItems = listMatches.map((match) => ({
+      index: parseInt(match[1], 10),
+      title: match[2].trim(),
+      descriptionHtml: stripOuterP(marked.parse(match[3].trim())),
+    }));
+  }
+}
 ---
 
 <BaseLayout title="Latest Weekly Brief" description={latestPost.data.description}>
