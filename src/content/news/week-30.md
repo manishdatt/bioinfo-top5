@@ -1,6 +1,6 @@
 ---
 title: "Weekly Bioinformatics Articles - Week 30"
-pubDate: "2026-07-20"
+pubDate: 2026-07-20
 description: "Top 10 bioinformatics research articles with AI applications in biology from leading journals"
 summary: "This week features breakthrough papers on AI-driven protein design, gene editing, single-cell analysis, and computational biology tools. Research spans from Nature Biotechnology to Nature Machine Intelligence, showcasing innovative applications of machine learning in genomics, proteomics, and systems biology."
 weekNumber: 30
