@@ -30,3 +30,15 @@ Desktop.ini
 # local temp files
 *.tmp
 *.temp
+
+# personal agent / workspace files (local-only, not part of the site)
+AGENTS.md
+HEARTBEAT.md
+IDENTITY.md
+MEMORY.md
+SOUL.md
+TOOLS.md
+USER.md
+.openclaw/
+openclaw-workspace-state.json
+skills/
