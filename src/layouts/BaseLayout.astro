@@ -37,20 +37,6 @@ const defaultDescription = "Weekly bioinformatics news and updates. Stay informe
       }
     </script>
   </head>
-    <meta property="og:description" content={description} />
-    <link rel="icon" type="image/svg+xml" href="/logo_path.svg" />
-    <title>{pageTitle}</title>
-    <script is:inline>
-      const storageKey = "bioinfo-top5-theme";
-      const storedTheme = localStorage.getItem(storageKey);
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
-  </head>
   <body class="min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
     <header class="border-b border-slate-200/80 dark:border-slate-800">
       <div class="mx-auto flex w-full max-w-3xl items-center justify-between px-4 py-5">
