@@ -1,68 +1,68 @@
 ---
 title: "Weekly Bioinformatics Articles - Week 38"
 pubDate: 2026-09-14
-description: "Top 10 bioinformatics and AI-in-biology research articles for week 38 of 2026."
-summary: "From full-length spatial transcriptomics and total single-cell RNA sequencing to DNA language models for variant effect prediction, this week's selection highlights specific new methods advancing single-cell, spatial, and sequence-based computational biology."
+description: "Top 10 bioinformatics research articles published in the past week (September 7-14, 2026)."
+summary: "From virtual cell models and metagenomic profilers to single-cell signaling reconstruction and pan-cancer T cell analysis, this week's selection covers ten methods and studies published within the last seven days in top peer-reviewed journals."
 weekNumber: 38
 draft: false
 ---
 
-## 1. Scalable Single-Cell Total RNA Sequencing Unifies Coding and Non-Coding Profiling
+## 1. Metax: Accurate Cross-Domain Taxonomic Profiling of Metagenomes
 
-Researchers present a generalizable, scalable framework for total RNA profiling in single cells that is fully compatible with commercial high-throughput microfluidic systems. By capturing coding and non-coding RNA together, the method removes a long-standing analytical blind spot and gives biologists a reproducible path to enrich and sequence total RNA at scale.
+Researchers introduce Metax, a cross-domain metagenomic profiler that uses genome-wide coverage evidence within a probabilistic framework to improve species-level microbial profiling. Applied across diverse datasets, Metax enables robust taxonomic profiling, pathogen detection, contamination assessment, and discovery of disease-associated bacterial and viral signatures — addressing a long-standing accuracy gap for complex, low-biomass communities.
 
-- [Scalable single-cell total RNA sequencing](https://www.nature.com/articles/s41587-026-03068-6)
+- [Metax (Cell, 11 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42727575/)
 
-## 2. Fullscope-seq: Full-Length Single-Cell Spatial Transcriptomics
+## 2. ProteinTalks: A Perturbation Proteomics-Based Virtual Cell Model
 
-Fullscope-seq combines Stereo-seq spatial transcriptomics with long-read sequencing to resolve RNA isoforms at single-cell resolution across large fields of view. It enables systematic spatial characterization of alternative splicing in complex tissues such as the primate brain, linking transcript isoforms to their precise tissue locations.
+Researchers generated temporal protein-abundance measurements from systematically perturbed breast cancer cell lines to develop ProteinTalks, a virtual cell model built on a NeuralODE framework. By capturing dynamics-aware, proteomics-based representations, ProteinTalks advances in silico drug discovery with an operational, interpretable tool for predicting therapeutic responses.
 
-- [Fullscope-seq spatial isoform method](https://pubmed.ncbi.nlm.nih.gov/42498883/)
+- [ProteinTalks (Nature, 9 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42717098/)
 
-## 3. SpatialZ: Bridging the Dimensional Gap from Planar Spatial Transcriptomics to 3D Atlases
+## 3. Reconstructing Signaling Histories of Single Cells via Perturbation Screens and Transfer Learning
 
-SpatialZ generates virtual single-cell spatial transcriptomics slices between experimentally measured sections, enabling accurate and efficient reconstruction of dense 3D cell atlases. By interpolating between sparse 2D measurements, it overcomes the cost and technical barriers that previously limited continuous 3D representation of tissue organization.
+The IRIS framework learns conserved signaling representations from high-throughput in vitro perturbation data to reconstruct signaling states and histories across diverse in vivo cellular contexts. By combining perturbation atlases with transfer learning, it fills a missing dimension in single-cell analysis where direct measurement of signaling history has been impossible.
 
-- [SpatialZ 3D spatial atlas framework](https://www.nature.com/articles/s41592-025-02969-9)
+- [IRIS signaling reconstruction (Nature Methods, 8 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42711495/)
 
-## 4. Flow Matching for Generative Modelling in Bioinformatics and Computational Biology
+## 4. scXpand: Pan-Cancer Detection of T Cell Clonal Expansion from Single-Cell Data
 
-This work lays out a roadmap for applying flow matching — a tractable generative modelling framework — across bioinformatics, from molecular design to representation learning. It positions flow matching as a flexible alternative to diffusion models for a range of computational biology tasks, with concrete guidance for adoption.
+Shorer and colleagues introduce scXpand, a machine-learning framework for detecting T cell clonal expansion directly from single-cell RNA sequencing — without requiring paired TCR sequencing. Trained on a pan-cancer database of 2.6 million T cells, the method shows robust performance across tissues, subtypes, and differentiation states.
 
-- [Flow matching roadmap](https://doi.org/10.1038/s42256-026-01220-)
+- [scXpand (Cell Genomics, 9 September 2026)](https://www.cell.com/cell-genomics/fulltext/S2666-979X(26)00190-4)
 
-## 5. PeerLPI: Quantitative and Interface-Aware Prediction of Peptide-Protein Interactions
+## 5. Himito: A Graph-Based Toolkit for Mitochondrial Genome Analysis Using Long Reads
 
-PeerLPI introduces an integrated learning strategy that simultaneously predicts peptide-protein interactions, maps binding interfaces, and estimates quantitative binding affinity. By unifying these three tasks in a single framework, it advances the interpretability and accuracy of peptide-protein interaction prediction for drug and tool design.
+Himito provides a graph-based toolkit for analyzing mitochondrial genomes from long-read sequencing data. It addresses the structural complexity of mitochondrial DNA, improving variant detection and assembly in a region that has traditionally been challenging for standard read-alignment pipelines.
 
-- [Peptide-protein interaction prediction](https://www.nature.com/articles/s42256-026-01291-z)
+- [Himito (Nature Communications, 10 September 2026)](https://www.nature.com/articles/s41467-026-60559-z)
 
-## 6. A Systematic Benchmark of Methods for Single-Cell and Spatial Long-Read Transcriptomics
+## 6. Bioinformatics for Human Long-Read Whole-Genome Sequencing
 
-Using paired short-read and Nanopore long-read single-cell datasets, this study systematically benchmarks computational tools for isoform detection and gene expression profiling. It reveals method-specific trade-offs and highlights the importance of sequencing quality and UMI correction, providing a practical resource for optimizing long-read single-cell analyses.
+A timely Primer reviewing the computational methods needed to analyze human long-read whole-genome sequencing data, from read processing and mapping to de novo assembly, multi-class variant detection, phasing, and repeat analysis. It provides practical guidance — including graph and pangenome frameworks — for researchers adopting long-read technologies.
 
-- [Long-read single-cell benchmark](https://pubmed.ncbi.nlm.nih.gov/42441075/)
+- [Long-read WGS bioinformatics Primer (Nature Reviews Methods Primers, 10 September 2026)](https://www.nature.com/articles/s43586-026-00519-x)
 
-## 7. cPeaks: A Generic Reference Defined by Consensus Peaks for Single-Cell ATAC-seq
+## 7. A Single-Cell Multi-Omic Atlas of the Human Pancreas
 
-The authors build a generic chromatin accessibility reference by aggregating peaks from 624 high-quality bulk ATAC-seq datasets, defining about 1.4 million consensus peaks (cPeaks). These peaks show consistent shapes across tissue types and peak-calling methods, improving single-cell accessibility comparison, cell-type labeling, and cancer analyses.
+Researchers combined advanced single-cell sequencing with spatial transcriptomics (Xenium) and proteomics (CODEX) to build a multiomics reference atlas of the human pancreas spanning early prenatal life, adulthood, and type 2 diabetes. The resource, built from 57 donors, provides a benchmark for dissecting pancreatic cell states in health and disease.
 
-- [cPeaks scATAC-seq reference](https://pubmed.ncbi.nlm.nih.gov/41663439/)
+- [Human pancreas multi-omic atlas (Cell Metabolism, September 2026)](https://www.sciencedirect.com/science/article/pii/S1550413126002962)
 
-## 8. ViSTA: Variant-Integrated Sequence Transformer for Sequence-Based Cancer Subtyping
+## 8. COBRA: Cell-Type-Specific Orthogonal Batch Effect Removal in scRNA-seq
 
-ViSTA is a variant-aware DNA language model that accurately predicts breast cancer subtypes using only exome variant data. It reveals biologically relevant embeddings and oncogenic mutational signatures, demonstrating the potential of sequence-based models for interpretable cancer classification without transcriptomic or imaging data.
+COBRA is a new algorithm for orthogonal batch-effect removal in single-cell RNA-sequencing data that preserves cell-type-specific biological variation. It provides a practical tool for integrating multi-batch single-cell datasets while minimizing unwanted technical artifacts.
 
-- [ViSTA cancer subtyping model](https://link.springer.com/article/10.1186/s13059-026-04275-9)
+- [COBRA batch correction (Bioinformatics, 2 September 2026)](https://doi.org/10.1093/bioinformatics/btag660)
 
-## 9. AlphaGenome: Advancing Regulatory Variant Effect Prediction
+## 9. BriGHT: Transcriptome-Regularized Multimodal Neuroimaging for Brain Disorder Prediction
 
-AlphaGenome is a deep learning model that takes 1 megabase of DNA sequence as input to predict functional genomic tracks at single-base resolution across diverse modalities. As the largest multimodal DNA sequence model for non-coding regions to date, it outperforms existing methods in variant effect prediction and splicing tasks.
+BriGHT introduces a transcriptome-regularized framework that integrates multimodal neuroimaging data with gene-expression priors to improve the prediction of brain disorders. By anchoring imaging-derived features to underlying transcriptomic architecture, it aims to boost both accuracy and biological interpretability.
 
-- [AlphaGenome variant effect model](https://www.nature.com/articles/s41586-025-10014-0)
+- [BriGHT brain disorder prediction (Bioinformatics, 11 September 2026)](https://doi.org/10.1093/bioinformatics/btag681)
 
-## 10. An Integrative Single-Nucleus Multiomic Atlas of the Human Heart
+## 10. Systems-Level Modeling of Cell Migration Using Spatially-Resolved Single-Cell Data
 
-This study generates an integrated multiomic atlas of human cardiac cells by combining single-nucleus RNA sequencing from 299 donors with single-nucleus ATAC-seq from 106 donors. The atlas provides a high-resolution reference of cardiac cell types and regulatory landscapes, supporting the dissection of heart development, disease, and cell-type-specific gene regulation.
+A new framework for modeling cell migration at a systems level using spatially-resolved single-cell data, offering insight into how cells move and organize within tissues. The method integrates spatial information with single-cell measurements to build more realistic models of collective cell behavior.
 
-- [Human cardiac multiomic atlas](https://link.springer.com/article/10.1186/s13059-026-04061-7)
+- [Systems-level cell migration modeling (BMC Bioinformatics, 11 September 2026)](https://link.springer.com/article/10.1186/s12859-026-06269-x)
