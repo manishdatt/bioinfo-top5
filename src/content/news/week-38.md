@@ -1,68 +1,68 @@
 ---
 title: "Weekly Bioinformatics Articles - Week 38"
 pubDate: 2026-09-14
-description: "Top 10 bioinformatics research articles published in the past week (September 7-14, 2026)."
-summary: "From virtual cell models and metagenomic profilers to single-cell signaling reconstruction and pan-cancer T cell analysis, this week's selection covers ten methods and studies published within the last seven days in top peer-reviewed journals."
+description: "Top 10 AI and bioinformatics research articles published in the past week (September 7-14, 2026)."
+summary: "From phylogeny-aware genomic language models and LLM-driven enzyme engineering to protein language models for neoantigen and HLA prediction, this week's selection highlights how large language models, foundation models, and deep learning are reshaping genomics, protein science, single-cell analysis, and drug discovery."
 weekNumber: 38
 draft: false
 ---
 
-## 1. Metax: Accurate Cross-Domain Taxonomic Profiling of Metagenomes
+## 1. Predicting genome-wide functional constraints with GPN-Star
 
-Researchers introduce Metax, a cross-domain metagenomic profiler that uses genome-wide coverage evidence within a probabilistic framework to improve species-level microbial profiling. Applied across diverse datasets, Metax enables robust taxonomic profiling, pathogen detection, contamination assessment, and discovery of disease-associated bacterial and viral signatures — addressing a long-standing accuracy gap for complex, low-biomass communities.
+Researchers at UC Berkeley and DKFZ introduce GPN-Star, a phylogeny-aware genomic language model (foundation model) that explicitly models evolutionary relationships using whole-genome alignments and species trees. Trained across vertebrate, mammal, and primate timescales, it achieves state-of-the-art variant-effect prediction in both coding and non-coding regions and substantially outperforms prior methods at prioritizing pathogenic and fine-mapped GWAS variants. The framework also trains robustly across five model organisms, positioning it as a scalable tool for genome interpretation.
 
-- [Metax (Cell, 11 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42727575/)
+- [GPN-Star (Nature, 9 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42717086/)
 
-## 2. ProteinTalks: A Perturbation Proteomics-Based Virtual Cell Model
+## 2. MutexaGPT: an intuition-to-design translator for physics-based enzyme engineering
 
-Researchers generated temporal protein-abundance measurements from systematically perturbed breast cancer cell lines to develop ProteinTalks, a virtual cell model built on a NeuralODE framework. By capturing dynamics-aware, proteomics-based representations, ProteinTalks advances in silico drug discovery with an operational, interpretable tool for predicting therapeutic responses.
+MutexaGPT is an open-access, multi-agent large-language-model platform that translates plain-English, intuition-driven enzyme-engineering requests into physics-based molecular simulations and actionable mutation designs. The LLM agents elicit missing information, construct physics models, launch high-throughput molecular-dynamics workflows, and return smart mutation libraries — demonstrated on a halide methyltransferase and a bidomain amylase. It democratizes physics-guided enzyme engineering by joining human creativity with automated modeling.
 
-- [ProteinTalks (Nature, 9 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42717098/)
+- [MutexaGPT (Nature Computational Science, 10 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42722895/)
 
-## 3. Reconstructing Signaling Histories of Single Cells via Perturbation Screens and Transfer Learning
+## 3. NeoGen-BC: generative protein language models for designing shared neoantigens in breast cancer
 
-The IRIS framework learns conserved signaling representations from high-throughput in vitro perturbation data to reconstruct signaling states and histories across diverse in vivo cellular contexts. By combining perturbation atlases with transfer learning, it fills a missing dimension in single-cell analysis where direct measurement of signaling history has been impossible.
+NeoGen-BC combines protein language model (PLM) embeddings with retrieval-augmented generation and a multi-scale MCNN-BiLSTM classifier to move from neoantigen prediction to rational antigen design. A controlled ProtGPT2 generative module explores immunogenic peptide space, and the framework accurately recovered validated ESR1 and PIK3CA shared neoantigens that conventional predictors miss. It provides a computational foundation for "off-the-shelf" antigen vaccines against immunologically cold breast cancers.
+
+- [NeoGen-BC (Biochem Biophys Res Commun, 9 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42721858/)
+
+## 4. Protein language model embeddings recover evolutionary and functional organization across the Ras superfamily
+
+This study tests whether protein language model embeddings capture biologically meaningful sequence organization by benchmarking them on the Ras GTPase superfamily. The authors show that simple linear classifiers already separate Ras families and subfamilies, and that residue-level ablation highlights candidate regions tied to functional specialization. It establishes PLM embeddings as an effective alignment-free representation of protein phylogeny and function.
+
+- [PLM embeddings for Ras superfamily (Journal of Molecular Evolution, 12 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42730944/)
+
+## 5. BeitAI-pHLA: multiallele peptide-HLA binding prediction with a protein language model
+
+BeitAI-pHLA integrates protein language model embeddings with an attention-based multi-instance learning framework to predict peptide–HLA class I binding, directly tackling the poly-specificity of immunopeptidomics data. It markedly outperforms existing tools on external validation sets and excels at motif deconvolution and immunogenic neoepitope prioritization, with strong potential for personalized immunotherapy and vaccine design.
+
+- [BeitAI-pHLA (Computational and Structural Biotechnology Journal, 11 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42729647/)
+
+## 6. UFold-X: an enhanced dual & dynamic U-Mamba model for RNA secondary structure prediction
+
+UFold-X is a dual-branch deep-learning framework combining a convolutional encoder with a Mamba-based visual state-space module for long-range RNA structure prediction, with a dynamic gating mechanism that adapts to sequence length. It delivers the best performance among deep-learning methods on long RNAs (up to 5,000 nucleotides) while running in ~0.08 s per sequence, and its SHAPE-reactivity variant strongly agrees with experimental data.
+
+- [UFold-X (Nucleic Acids Research, 7 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42728800/)
+
+## 7. HyLnc: hybrid deep learning and feature-based long non-coding RNA prediction
+
+HyLnc integrates a custom BERT-based transformer pre-trained on metazoan RNA with 348 handcrafted biological features to identify lncRNAs from transcriptomic data. A random forest classifier trained on the optimized hybrid feature set reached 91.3% accuracy and an F1 of 91.2% on an independent validation set, outperforming existing tools. The approach demonstrates that combining deep contextual embeddings with interpretable features improves large-scale transcriptome annotation.
+
+- [HyLnc (RNA Biology, 9 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42716909/)
+
+## 8. 4D spatiotemporal landscape of mitochondrial phenotypes unlocked through representation learning
+
+Researchers built MitoSpace, a self-supervised deep-learning model trained on terabytes of lattice light-sheet microscopy data to learn latent representations of mitochondrial morphology and dynamics across cellular states. The learned representations beat predefined features at drug classification and predict membrane potential (R² = 0.91), mapping form to function at single-cell resolution and generalizing zero-shot to unseen perturbations and human organoids.
+
+- [MitoSpace (Cell, 10 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42721963/)
+
+## 9. ScGraphTrans: pathway-guided graph learning and domain adaptation for single-cell annotation
+
+ScGraphTrans is a graph neural network framework that uses pathway activity scores as pseudo-labels to refine cell–cell graphs and integrates domain adaptation to improve cell type annotation and communication inference in the tumor microenvironment. Evaluated on 38,667 cells across three cancers, it reached 84.28% average accuracy and recovered disease-specific gene interactions without prior ligand–receptor supervision.
+
+- [ScGraphTrans (IEEE Transactions on Computational Biology and Bioinformatics, 10 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42721175/)
+
+## 10. Reconstructing signaling histories of single cells via perturbation screens and transfer learning
+
+This work presents IRIS, a neural-network model trained on a high-throughput in vitro signaling perturbation atlas that learns transferable signaling response signatures and infers signaling states and histories in vivo. Applied to mouse embryo atlases, it uncovered combinatorial signaling-code usage and reconstructed lineage histories, revealing conserved signaling responses across diverse cell types and enabling targeted interventions and cell-fate engineering.
 
 - [IRIS signaling reconstruction (Nature Methods, 8 September 2026)](https://pubmed.ncbi.nlm.nih.gov/42711495/)
-
-## 4. scXpand: Pan-Cancer Detection of T Cell Clonal Expansion from Single-Cell Data
-
-Shorer and colleagues introduce scXpand, a machine-learning framework for detecting T cell clonal expansion directly from single-cell RNA sequencing — without requiring paired TCR sequencing. Trained on a pan-cancer database of 2.6 million T cells, the method shows robust performance across tissues, subtypes, and differentiation states.
-
-- [scXpand (Cell Genomics, 9 September 2026)](https://www.cell.com/cell-genomics/fulltext/S2666-979X(26)00190-4)
-
-## 5. Himito: A Graph-Based Toolkit for Mitochondrial Genome Analysis Using Long Reads
-
-Himito provides a graph-based toolkit for analyzing mitochondrial genomes from long-read sequencing data. It addresses the structural complexity of mitochondrial DNA, improving variant detection and assembly in a region that has traditionally been challenging for standard read-alignment pipelines.
-
-- [Himito (Nature Communications, 10 September 2026)](https://www.nature.com/articles/s41467-026-60559-z)
-
-## 6. Bioinformatics for Human Long-Read Whole-Genome Sequencing
-
-A timely Primer reviewing the computational methods needed to analyze human long-read whole-genome sequencing data, from read processing and mapping to de novo assembly, multi-class variant detection, phasing, and repeat analysis. It provides practical guidance — including graph and pangenome frameworks — for researchers adopting long-read technologies.
-
-- [Long-read WGS bioinformatics Primer (Nature Reviews Methods Primers, 10 September 2026)](https://www.nature.com/articles/s43586-026-00519-x)
-
-## 7. A Single-Cell Multi-Omic Atlas of the Human Pancreas
-
-Researchers combined advanced single-cell sequencing with spatial transcriptomics (Xenium) and proteomics (CODEX) to build a multiomics reference atlas of the human pancreas spanning early prenatal life, adulthood, and type 2 diabetes. The resource, built from 57 donors, provides a benchmark for dissecting pancreatic cell states in health and disease.
-
-- [Human pancreas multi-omic atlas (Cell Metabolism, September 2026)](https://www.sciencedirect.com/science/article/pii/S1550413126002962)
-
-## 8. COBRA: Cell-Type-Specific Orthogonal Batch Effect Removal in scRNA-seq
-
-COBRA is a new algorithm for orthogonal batch-effect removal in single-cell RNA-sequencing data that preserves cell-type-specific biological variation. It provides a practical tool for integrating multi-batch single-cell datasets while minimizing unwanted technical artifacts.
-
-- [COBRA batch correction (Bioinformatics, 2 September 2026)](https://doi.org/10.1093/bioinformatics/btag660)
-
-## 9. BriGHT: Transcriptome-Regularized Multimodal Neuroimaging for Brain Disorder Prediction
-
-BriGHT introduces a transcriptome-regularized framework that integrates multimodal neuroimaging data with gene-expression priors to improve the prediction of brain disorders. By anchoring imaging-derived features to underlying transcriptomic architecture, it aims to boost both accuracy and biological interpretability.
-
-- [BriGHT brain disorder prediction (Bioinformatics, 11 September 2026)](https://doi.org/10.1093/bioinformatics/btag681)
-
-## 10. Systems-Level Modeling of Cell Migration Using Spatially-Resolved Single-Cell Data
-
-A new framework for modeling cell migration at a systems level using spatially-resolved single-cell data, offering insight into how cells move and organize within tissues. The method integrates spatial information with single-cell measurements to build more realistic models of collective cell behavior.
-
-- [Systems-level cell migration modeling (BMC Bioinformatics, 11 September 2026)](https://link.springer.com/article/10.1186/s12859-026-06269-x)
